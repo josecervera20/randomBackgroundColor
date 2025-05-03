@@ -1,0 +1,48 @@
+/* Reset básico de márgenes y modelo de caja */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Paleta de colores reutilizable */
+:root {
+    --yellow: #f1be32;
+    --golden-yellow: #feac32;
+    --dark-purple: #110815;
+    --light-grey: #efefef;
+}
+
+/* Estilo base del cuerpo */
+body {
+    background-color: var(--dark-purple);
+    color: var(--light-grey);
+    text-align: center;
+}
+
+/* Contenedor de información */
+.bg-information-container {
+    margin: 15px 0 25px;
+    font-size: 1.2rem;
+}
+
+/* Botón principal */
+.btn {
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px;
+    color: var(--dark-purple);
+    background-color: var(--golden-yellow);
+    background-image: linear-gradient(#fecc4c, #ffac33);
+    border: 3px solid var(--golden-yellow);
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-image 0.3s ease;
+}
+
+/* Efecto hover del botón */
+.btn:hover {
+    background-image: linear-gradient(#ffcc4c, #f89808);
+}
